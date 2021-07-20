@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>
+    gamesmod - Figma
+  </title>
+  <style>
+    .total-block {
+      height: 100hv;
+      background: #141414;
+    }
+
+    /* BEGIN LEFT-BLOCK */
+    .left-block {
+      width: 25%;
+      background-color: #141414;
+      border-right: 1px solid #888383;
+      display: inline-block;
+      position: absolute;
+      width: 252px;
+      height: 1080px;
+      left: 0px;
+    }
+
+    .box-on {
+      color: cornflowerblue;
+      font-size: 20px;
+      position: absolute;
+      padding-top: 50px;
+      left: 50px;
+    }
+
+    .box-on > img {
+      position: relative;
+      top: 7px;
+    }
+
+    .box-between {
+      color: #FFFFFF;
+      padding-top: 140px;
+      padding-left: 20px;
+    }
+
+    .box-between > ul {
+      list-style-type: none;
+    }
+
+    .box-between > ul > li {
+      padding-bottom: 40px;
+    }
+
+    .box-between > ul > li > img {
+      position: relative;
+      top: 4px;
+      right: 20px;
+    }
+
+    .box-between > ul > li:hover {
+      background-color: #2F2F2F;
+      color: #FFFFFF;
+      border-radius: 10px;
+    }
+
+    .box-last {
+      color: #E5E5E5;
+      padding-top: 270px;
+      padding-left: 20px;
+    }
+
+    .box-last > ul {
+      list-style-type: none;
+    }
+
+    .box-last > ul > li {
+      padding-top: 40px;
+    }
+
+    .box-last > ul > li:hover {
+      background-color: #2F2F2F;
+      color: #FFFFFF;
+      border-radius: 12px;
+    }
+
+    .box-last > ul > li > img {
+      position: relative;
+      top: 4px;
+      right: 20px;
+    }
+
+    /* END LEFT-BLOCK */
+
+    /* BEGIN RIGHT-BLOCK */
+    .right-block {
+      width: 74%;
+      background-color: #141414;
+      height: 1080px;
+      width: 330px;
+    }
+
+    /* BEGIN BOX-1 */
+    .box-1-all {
+      width: 74%;
+      height: 100%;
+      display: inline-block;
+      background-color: white;
+    }
+
+    .box-1-right {
+      position: absolute;
+      left: 300px;
+      top: 70px;
+      color: rgba(235, 235, 245, 0.6);
+    }
+
+    .box-1-right > span {
+      padding: 8px;
+      margin-right: 35px;
+    }
+
+    .box-1-right > span:hover {
+      background-color: #0061FD;
+      border-radius: 150px;
+    }
+
+    .box-1-left {
+      position: absolute;
+      left: 73%;
+      top: 65px;
+      border-radius: 24px;
+    }
+
+    .box-1-left > span > img {
+      position: absolute;
+      top: 3px;
+      left: 10px;
+      color: rgba(235, 235, 245, 0.6);
+      border-radius: 10px;
+    }
+    .box-1-left > span {
+      position: relative;
+    }
+    .box-1-left > span > input {
+      padding: 4px 40px 4px 40px;
+      background: #2F2F2F;
+      border-radius: 24px;
+      border: 0px;
+      outline: 0px;
+    }
+
+    .box-1-left > img {
+      position: relative;
+      top: 5px;
+      right: 35px;
+    }
+
+    /* END BOX-1 */
+
+    /* BEGIN BOX-2 */
+    .box-2-img {
+      position: absolute;
+      left: 280px;
+      right: 24.21%;
+      top: 120px;
+      border-radius: 12px 0px 0px 12px;
+    }
+
+    .box-2-left {
+      position: absolute;
+      left: 310px;
+      top: 120px;
+      color: white;
+    }
+
+    .box-2-left > h5 {
+      position: relative;
+      left: 10px;
+      top: 150px;
+    }
+
+    .box-2-left > h3 {
+      position: relative;
+      left: 10px;
+      top: 160px;
+    }
+
+    .box-2-left > h4 {
+      position: relative;
+      left: 10px;
+      top: 160px;
+      border-radius: 14px;
+      padding: 15px 10px 15px 10px;
+      background: #0061FD;
+    }
+
+    .box-2-left > h4 > img {
+      position: relative;
+      left: 110px;
+    }
+
+    .box-2-right {
+      position: absolute;
+      width: 200px;
+      height: 425px;
+      left: 1150px;
+      top: 110px;
+      color: #FFFFFF;
+      background: #2F2F2F;
+    }
+
+    .box-2-right > ul > li {
+      position: relative;
+      list-style-type: none;
+    }
+
+    /* END BOX-2 */
+
+    /* BEGIN BOX-3  */
+    .box-3-left {
+      position: absolute;
+      color: #FFFFFF;
+      font-size: 20px;
+      top: 540px;
+      left: 300px;
+      width: 140px;
+    }
+
+    .box-3-right {
+      position: absolute;
+      top: 565px;
+      right: 70px;
+      width: 110px;
+    }
+
+    .box-3-right > span > img {
+      padding-left: 20px;
+    }
+
+    /* END BOX-3 */
+
+    /* BEGIN BOX-4 */
+    .box-4-all {
+      position: absolute;
+      color: #FFFFFF;
+      top: 620px;
+      left: 280px;
+    }
+
+    .box-4-all > span {
+      display: inline-block;
+      padding: 4px;
+    }
+
+    .box-4-all > ul > li > span {
+    }
+    /* END BOX-4 */
+    /* END RIGHT-BLOCK */
+  </style>
+</head>
+
+<body>
+  <!-- BEGIN TOTAL-BLOCK -->
+  <div class="total-block">
+    <!-- BEGIN LEFT-BLOCK -->
+    <div class="left-block">
+      <div class="box-on">
+        <img src="./img/gamemode.png" alt="gamemode" />
+      </div>
+
+      <div class="box-between">
+        <ul>
+          <li>
+            <img src="./img/home.png" alt="home" />
+            <span>Home</span>
+          </li>
+
+          <li>
+            <img src="./img/store.png" alt="store" />
+            <span>Store</span>
+          </li>
+
+          <li>
+            <img src="img/library.png" alt="library" />
+            <span>Libary</span>
+          </li>
+
+          <li>
+            <img src="./img/Friends.png" alt="Friends" />
+            <span>Friends</span>
+          </li>
+
+          <li>
+            <img src="img/live.png" alt="live" />
+            <span>Live</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="box-last">
+        <ul>
+          <li>
+            <img src="./img/download.png" alt="downloads" />
+            <span>Downloads</span>
+          </li>
+
+          <li>
+            <img src="./img/settings.png" alt="settings" />
+            <span>Settings</span>
+          </li>
+
+         <li>
+            <img src="./img/Tung-Tran.png" alt="Tung Tran" />
+            <span>Tung Tran</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- END LEFT-BLOCK -->
+
+    <!-- BEGIN RIGHT-BLOCK -->
+    <div class="right-block">
+      <!-- BEGIN BOX-1 -->
+      <div class="box-1-all">
+        <div class="box-1-right">
+          <span>Discover</span>
+          <span>Browse</span>
+          <span>Whishlist</span>
+        </div>
+
+        <div class="box-1-left">
+          <img src="./img/ring.png" alt="ring" />
+          <span>
+            <img src="./img/search.png" alt="Search" />
+            <input placeholder="Search" />
+          </span>
+        </div>
+      </div>
+      <!-- END BOX-1 -->
+
+      <!-- BEGIN BOX-2 -->
+      <div class="box-2-img">
+        <img src="img/hinhlon.png" alt="hinh lon" height="400px" width="800px" />
+      </div>
+
+      <div class="box-2-left">
+        <h2>Fortnite</h2>
+        <h5>Update</h5>
+        <h3>The hunt is on in Fortnite Chapter 2 -<br />Season 5: Zero Point</h3>
+        <h4><img src="./img/arrow.png" alt="arrow" />Play for free</h4>
+      </div>
+
+
+      <div class="box-2-right">
+        <ul>
+          <li><img src="./img/img1.png" alt="hinh1" />
+            <span>Fortnite</span>
+          </li>
+
+          <li>
+            <img src="./img/img2.png" alt="hinh2" />
+            <span>Rocket League</span>
+          </li>
+
+          <li> <img src="./img/img3.png" alt="hinh3" />
+            <span>The Escapists 2</span>
+          </li>
+
+          <li>
+            <img src="img/img4.png" alt="hinh4" />
+            <span>The Long Dark</span>
+          </li>
+
+          <li>
+            <img src="./img/img5.png" alt="hinh5" />
+            <span>Yakura:<br>Like a Dragon</span>
+          </li>
+
+          <li>
+            <img src="./img/img6.png" alt="hinh6" />
+            <span>Warhammer:</br>Vermintide 2</span>
+          </li>
+        </ul>
+      </div>
+      <!-- END BOX-2 -->
+
+      <!-- BEGIN BOX-3 -->
+      <div class="box-3-left">
+        <h4>Game one Sale</h4>
+      </div>
+
+      <div class="box-3-right">
+        <span>
+          <img src="./img/left-arrow.png" alt="left-arrow" />
+          <img src="./img/right-arrow.png" alt="right-arrow" />
+        </span>
+      </div>
+
+      <!-- END BOX-3 -->
+
+      <!-- BEGIN BOX-4 -->
+      <div class="box-4-all">
+        <span>
+          <img src="./img/game-1.png" alt="game-1" />
+          <p>Valheim</p>
+          <p>Action Games</p>
+          <p>$8.15</p>
+        </span>
+
+        <span>
+          <img src="./img/game-2.png" alt="game-2" />
+          <p>BIOSHOCK: THE COLLEC...</p>
+          <p>Action, RPQ</p>
+          <p>-80% $50 $8.67</p>
+        </span>
+
+        <span>
+          <img src="./img/game-3.png" alt="game-3" />
+          <p>Unravel Two</p>
+          <p>Adventure Games</p>
+          <p>$20.38</p>
+        </span>
+
+        <span>
+          <img src="./img/game-4.png" alt="game-4">
+          <p>Tick Tock: A Tale for Two</p>
+          <p>Indie Games</p>
+          <p>-60 $3.47 $1.39</p>
+        </span>
+
+        <span>
+          <img src="./img/game-5.png" alt="game-5" />
+          <p>HITMAN 3</p>
+          <p>Action Games</p>
+          <p>$23.99</p>
+        </span>
+      </div>
+      <!-- END BOX-4 -->
+    </div>
+    <!-- END RIGHT-BLOCK -->
+  </div>
+  <!-- END TOTAL-BLOCK -->
+</body>
+
+</html>
